@@ -38,7 +38,8 @@ int print_char(va_list list)
 	int i = 0;
 
 	c = va_arg(list, int);
-
+	if (c == '\0')
+		return (-1);
 	_putchar(c);
 	i++;
 	return (i);
