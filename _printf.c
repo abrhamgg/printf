@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 				return (-1);
 			f = get_func(format[i + 1]);
 			if (f == NULL)
-				count += print_nan(format[i + 1]);
+				count += print_nan(format[i], format[i + 1]);
 			else
 				count += f(list);
 			i++;
