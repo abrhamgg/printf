@@ -38,6 +38,7 @@ int print_char(va_list list)
 	int i = 0;
 
 	c = va_arg(list, int);
+
 	if (c == '\0')
 		return (-1);
 	_putchar(c);
@@ -55,11 +56,10 @@ int print_char(va_list list)
 
 int print_nan(char ch1, char ch2)
 {
-
 	if (ch2 == '%')
 	{
 		write(1, &ch2, 1);
-		return (0);
+		return (1);
 	}
 	else
 	{
