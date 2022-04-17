@@ -53,17 +53,16 @@ int print_char(va_list list)
  * Return: 1 if ch2 is a % and 2 is ch2 is anything else
  */
 
-int print_nan(char ch1, char ch2)
+int print_nan(char ch2)
 {
+	
 	if (ch2 == '%')
 	{
 		write(1, &ch2, 1);
-		return (1);
+		return (0);
 	}
 	else
 	{
-		write(1, &ch1, 1);
-		write(1, &ch2, 1);
-		return (2);
+		return (0);
 	}
 }
