@@ -1,10 +1,11 @@
-#include "main.h"
 #include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - fucntion that prints a char.
- * @c: input character.
- * Return: prints a char.
+ *_putchar - writes a character to stdout
+ *@c:charcter to print
+ *Return:1 - on success, -1 on error
+ *
  */
 
 int _putchar(char c)

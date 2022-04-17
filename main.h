@@ -1,11 +1,27 @@
 #ifndef MAIN
 #define MAIN
+#include <stdarg.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+/**
+ * struct ops - a structure containing a char to compare with formatb modifiers
+ * and then choose the right function when it matches
+ * @operation: the char we want to compare to
+ * @func: the address of the function we want to return if a char matches
+ */
+
+typedef struct ops
+{
+	char operation;
+	int (*func)(va_list);
+} ops_f;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int _puts(char *str);
-int _strlen(char *str);
-void my_reverse(char str[], int len);
-char* my_itoa(int num, char* str, int base);
+int (*get_func(char ch))(va_list);
+int print_nan(char ch1, char ch2);
+int print_string(va_list list);
+int print_char(va_list list);
 
 #endif
