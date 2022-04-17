@@ -23,5 +23,8 @@ int (*get_func(char ch))(va_list);
 int print_nan(char ch1, char ch2);
 int print_string(va_list list);
 int print_char(va_list list);
+int print_num(va_list list);
+void my_reverse(char str[], int len);
+char* my_itoa(int num, char* str, int base);
 
 #endif

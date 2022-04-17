@@ -68,3 +68,25 @@ int print_nan(char ch1, char ch2)
 		return (2);
 	}
 }
+
+/**
+ * print_num - function that prints an int to stdout.
+ * @list: list to increment.
+ * Return: no of char printed.
+ */
+
+int print_num(va_list list)
+{
+	int i, num;
+	char c[128];
+	char *str;
+
+	num = va_arg(list, int);
+	str = my_itoa(num, c, 10);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	return (i);
+
+}
