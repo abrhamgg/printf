@@ -35,5 +35,6 @@ int print_hex(va_list list);
 int print_Hex(va_list list);
 int print_octal(va_list list);
 int print_S(va_list list);
+int print_p(va_list list);
 
 #endif
