@@ -22,6 +22,7 @@ int (*get_func(char ch))(va_list)
 		{'X', print_Hex},
 		{'x', print_hex},
 		{'S', print_S},
+		{'r', print_r},
 		{'\0', NULL}
 	};
 
