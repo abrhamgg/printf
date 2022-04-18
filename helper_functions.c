@@ -35,13 +35,14 @@ char *my_itoa(int num, char *str, int base)
 	int i = 0;
 	bool isNegative = false;
 
-    /* A zero is same "0" string in all base */
+	/* A zero is same "0" string in all base */
 	if (num == 0)
 	{
 		str[i] = '0';
 		str[i + 1] = '\0';
 		return (str);
 	}
+
 	if (num < 0 && base == 10)
 	{
 		isNegative = true;
@@ -54,12 +55,11 @@ char *my_itoa(int num, char *str, int base)
 		str[i++] = (rem > 9) ? (rem - 10) + 'A' : rem + '0';
 		num = num / base;
 	}
-    /* Append negative sign for negative numbers */
 	if (isNegative)
-	{
 		str[i++] = '-';
-	}
+
 	str[i] = '\0';
 	my_reverse(str, i);
+
 	return (str);
 }

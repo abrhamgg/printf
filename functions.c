@@ -70,9 +70,9 @@ int print_nan(char ch1, char ch2)
 }
 
 /**
- * print_num - function that prints an int to stdout.
- * @list: list to increment.
- * Return: no of char printed.
+ * print_num - function to print integer.
+ * @list: input.
+ * Return: int.
  */
 
 int print_num(va_list list)
@@ -88,5 +88,4 @@ int print_num(va_list list)
 		_putchar(str[i]);
 	}
 	return (i);
-
 }

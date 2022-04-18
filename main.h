@@ -26,5 +26,7 @@ int print_char(va_list list);
 int print_num(va_list list);
 void my_reverse(char str[], int len);
 char* my_itoa(int num, char* str, int base);
+int print_binary(va_list list);
+unsigned int base_len(unsigned int num, int base);
 
 #endif
