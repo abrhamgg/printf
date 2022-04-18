@@ -28,5 +28,11 @@ void my_reverse(char str[], int len);
 char* my_itoa(int num, char* str, int base);
 int print_binary(va_list list);
 unsigned int base_len(unsigned int num, int base);
+int print_unsigned(va_list list);
+char *hex_conv(int num);
+char *rev_string(char *s);
+int print_hex(va_list list);
+int print_Hex(va_list list);
+int print_octal(va_list list);
 
 #endif
