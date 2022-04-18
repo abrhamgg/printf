@@ -25,7 +25,7 @@ int print_p(va_list list)
 	c = 2;
 	i = 0;
 	len = base_len(add, 16);
-	hex = malloc((sizeof(char) *len) + 1);
+	hex = malloc((sizeof(char) * len) + 1);
 	if (!hex)
 	{
 		for (i = 0; s[i]; i++)
